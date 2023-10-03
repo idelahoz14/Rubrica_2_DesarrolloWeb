@@ -1,0 +1,139 @@
+/* Estilos para el sitio web */
+
+/* Estilos para el header */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.header {
+    background-color: #00FFFB;
+    color: #fff;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 100%;
+}
+
+/* Estilos para el main */
+.main {
+    text-align: center;
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.filter-select {
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    appearance: none; /* Oculta el estilo por defecto del navegador */
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 220px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.filter-select::after {
+    content: '\25BC'; /* Unicode para una flecha hacia abajo */
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none; /* Evita que el usuario haga clic en la flecha */
+}
+
+.filter-select:hover,
+.filter-select:focus {
+    border-color: #00FFFB;
+    box-shadow: 0 0 8px rgba(0, 255, 251, 0.5);
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px;
+}
+
+/* Estilos avanzados para las cards */
+.card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    overflow: hidden;
+    width: 220px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.card-content {
+    padding: 16px;
+}
+
+.card h2 {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #333;
+}
+
+.card p {
+    font-size: 14px;
+    color: #777;
+    margin-top: 8px;
+    flex-grow: 1;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 8px;
+}
+
+.card-footer button {
+    background-color: #00FFFB;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.card-footer button:hover {
+    background-color: #00CCCA;
+}
+
+/* Estilos para el footer */
+.footer {
+    text-align: center;
+    color: #fff;
+    margin: 0px;
+    padding: 0px;
+    background-color: #00FFFB;
+    width: 100%;
+    bottom: 0;
+}
